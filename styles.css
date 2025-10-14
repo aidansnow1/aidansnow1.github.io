@@ -1,0 +1,82 @@
+.nav-menu ul {
+  margin: 10px 60px;
+  padding: 0;
+} 
+
+.nav-menu h2, p {
+  margin: 10px;
+}
+
+.nav-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #DEB877;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-menu ul li a:hover {
+  background-color: #FFE4C4;
+}
+
+.section-interne ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+}
+
+.section-interne li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.section-interne li a:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.joli {
+  padding:1em;
+  width: 1150px;
+  height: 100%;
+  box-sizing: border-box;
+  background-color:#e4e4d9;
+}
+
+.joli2 {
+  /* Mieux vaut centrer le texte dans un
+     cercle. */
+  text-align: center;
+
+  /* On fait attention à ce que le texte
+     ne touche pas la bordure. On placera
+     donc le texte avec un remplissage, ce
+     qui donnera une meilleure impression
+     pour le cercle. */
+  padding: 0.5em;
+
+  /* La bordure marquera le cercle. On
+     pourrait également utiliser un arrière-
+     plan car celui-ci aurait été contenu
+     par border-radius */
+  border: 0.2em solid black;
+
+  /* Assurons-nous que la boîte soit carrée
+     pour obtenir un cercle bien rond plutôt
+     qu'une ellipse ;) */
+  width: 100
+em;
+  height: 4em;
+}
