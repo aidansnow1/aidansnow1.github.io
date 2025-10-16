@@ -7,6 +7,7 @@
 		<title>Voyage</title>
 		<link rel="stylesheet" href="styles.css">
 		<style>
+/*Pour changer la couleur de certain lettres. Source: https://www.w3schools.com/html/html_css.asp#:~:text=The%20external%20style%20sheet%20can,CSS%20Padding*/
         .letter-red {
             color: red;
         }
@@ -16,6 +17,7 @@
         .letter-white {
             color: white;
         }
+/*Pour changer l'arrière plan a un image. Source:https://www.w3schools.com/html/html_images_background.asp#:~:text=%E2%9D%AE%20Previous%20Next%20%E2%9D%AF,body%20%7B*/
         body {
           background-image: url('https://media.cntraveller.com/photos/660e83496c06875aa976de49/16:9/w_1920,c_limit/dolomites-GettyImages-155382713.jpeg');
           background-repeat: no-repeat;
@@ -26,23 +28,29 @@
 	</head>
 	
 	<body>
-	  <div class="nav-menu">
-	   <ul>
-       <li><a href="poeme.html">Mon poeme</a></li>
-       <li><a href="voyage.html">Mon voyage parfait</a></li>
-       <li><a href="biographie.html">Ma biographie</a></li>
-    </ul>
-   </div>
-	
-	<table border="0">
+<!--Retour en haut-->
+	  <a name="retour-en-haut"></a> 
+<!--Pour ma bar de navigation en haut-->		  
+    <div class="nav-menu">
+	    <ul>
+        <li><a href="poeme.html">Mon poeme</a></li>
+        <li><a href="voyage.html">Mon voyage parfait</a></li>
+        <li><a href="biographie.html">Ma biographie</a></li>
+      </ul>
+    </div>
+<!--Pour mon retour à l'acceuil-->	
+	  <table border="0">
       <tr>
         <td valign="middle"><a href="index.html"> <img src="data:image/png;base64,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" width="30"/></a></td>
         <td>←acceuil</td>
       </tr>
     </table>
     
-	 <center><div class="joli"><h1><span class="letter-green"><u>LES</u></span><span class="letter-white"><u>DOLOMITES,</u></span><span class="letter-red"><u>ITALIE</u></span></h1>
-	   <center><p style= width:1000px;> Les Dolomites sont une magnifique chaîne de montagnes située dans le nord de l’Italie. Elles sont célèbres pour leurs paysages 
+    
+<!--Text de intro au Dolomites avec titre qui contien une couleur différent pour chaque mot.-->    
+	  <center><div class="joli"><h1><span class="letter-green"><u>LES</u></span><span class="letter-white"><u>DOLOMITES,</u></span><span class="letter-red"><u>ITALIE</u></span></h1>
+	
+	  <center><p style= width:1000px;> Les Dolomites sont une magnifique chaîne de montagnes située dans le nord de l’Italie. Elles sont célèbres pour leurs paysages 
 spectaculaires, leurs pentes rocheuses impressionnantes, et leurs vallées verdoyantes. Les Dolomites offrent une combinaison unique de 
 beauté naturelle et de culture alpine. En été, elles attirent les randonneurs, les cyclistes et les amateurs de nature, tandis qu’en 
 hiver, elles deviennent un paradis pour le ski et les sports de neige. On y trouve aussi de charmants villages de montagne, des lacs 
@@ -50,6 +58,7 @@ turquoise et une cuisine locale savoureuse qui mêle les influences italiennes e
 détendre, admirer la nature et vivre une aventure inoubliable.</p></div></center>
 <br>
 
+<!--Tableaux sans bordure des place interessant à visiter dans les Dolomites.-->
 
 	  <center><div class="joli"><h3><u>Sites interessant à visiter</u></h3>
 	  <center><table border="0">
@@ -68,7 +77,8 @@ détendre, admirer la nature et vivre une aventure inoubliable.</p></div></cente
     </table></div></center>
     
     <br>
-	  
+<!--Tableau avec les mets populaire dans les Dolomites avec images.-->
+
 	  <center><div class="joli"><h3><u>Mets populaire des Dolomites</u></h3>
 	 
 	  <table border="2">
@@ -114,14 +124,15 @@ détendre, admirer la nature et vivre une aventure inoubliable.</p></div></cente
 		    ou de glace à la vanille.</Center></td>
 		    <td><img src="data:image/jpeg;base64,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" width="250"/></td>
 		  </tr>
-		  </table></div></center>
+		</table></div></center>
 		  
 		  <br>
-	  
+<!--Un fait interessant avec une bordure à l'entour du text.-->
+
 	  <center><div class="joli"><div class="joli2"><b>Fait intéressant:</b>Un fait intéressant à propos des Dolomites est que leurs montagnes sont composées 
 	  de dolomite, une roche qui leur donne une couleur unique, souvent rose au coucher du soleil. Classées au patrimoine mondial de l'UNESCO, elles sont aussi célèbres pour leur histoire militaire durant la Première Guerre mondiale, avec des vestiges de fortifications et de tunnels.</div></div></center>
 	
-		
+	  <center><a href="#retour-en-haut"><img src="https://cdn.pixabay.com/photo/2012/04/15/21/34/arrow-35388_1280.png" width="150"/></a></center>
 	</body>
 	
 </html>
